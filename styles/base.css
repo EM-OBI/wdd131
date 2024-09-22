@@ -53,6 +53,7 @@ section:nth-child(1) img {
     margin: 10px;
     border: 1px solid #01161E;
     border-radius: 5px;
+    box-shadow: 0 5px 10px#01161E;
 } 
 
 #flag {
