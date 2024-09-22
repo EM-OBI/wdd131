@@ -14,8 +14,9 @@ body {
     min-width: 860px;
 }
 
-h1 {
+h1, h2{
     font-family: "Noto Serif", serif;
+    text-align: center;
 }
 
 main {
@@ -35,7 +36,7 @@ section {
     border-radius: 5px;
 }
 
-section h1 {
+section h2:nth-child(1) {
     height: auto;
     background: #598392;
     text-align: center;
