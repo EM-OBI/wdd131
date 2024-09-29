@@ -52,6 +52,7 @@ header {
     padding: 0.5em;
     background: #495867;
     color: white;
+    position: relative;
 }
 
 .material-symbols-outlined {
@@ -63,6 +64,7 @@ header {
     display: inline-block;
     position: absolute;
     right: 0;
+    bottom: 20px;
 
     padding-right: 10px;
     /* padding: 5px; */
