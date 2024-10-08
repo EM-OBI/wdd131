@@ -81,8 +81,8 @@ section table {
 }
 
 p a {
-    color: #ccc;
-    text-decoration: none;
+    color: white;
+    /* text-decoration: dotted; */
 }
 
 #attribution {
