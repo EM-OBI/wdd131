@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>British Columbia</title>
+    <meta name="author" content="Godwin Bassey">
+    <meta name="description" content="Responsive webpage of British Columbia and information">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <!-- Insert Google Fonts -->
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>British Columbia</h1>
+    </header>
+    <main>
+        <picture>
+            <source media="(min-width: 1024px)" srcset="images/landscape-bc-large.webp">
+            <source media="(min-width: 768px)" srcset="images/landscape-bc.webp">
+            <img src="images/vancouver-at-night.webp" alt="Vancouver at night" class="hero" width="500" height="600">
+        </picture>
+        <section id="data">
+            <h2>Data</h2>
+            <table id="data-table">
+                <tr>
+                    <td class="criterion">Area:</td>
+                    <td class="value">364,764 sq km</td>
+                </tr>
+                <tr>
+                    <td class="criterion">Population:</td>
+                    <td class="value">5.071 Million</td>
+                </tr>
+                <tr>
+                    <td class="criterion">Capital:</td>
+                    <td class="value">Victoria</td>
+                </tr>
+                <tr>
+                    <td class="criterion">Languages:</td>
+                    <td class="value">English, French, Punjabi</td>
+                </tr>
+                <tr>
+                    <td class="criterion">Currency:</td>
+                    <td class="value">Canadian Dollars</td>
+                </tr>
+                <tr>
+                    <td class="criterion">Time Zone:</td>
+                    <td class="value">GMT-7</td>
+                </tr>
+                <tr>
+                    <td class="criterion">Calling Code:</td>
+                    <td class="value">+1</td>
+                </tr>
+                <tr>
+                    <td class="criterion">Internet TLD:</td>
+                    <td class="value">.bc.ca</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="weather">
+            <h2>Weather</h2>
+            <span><img id="weather-icon" src="images/weather-icon-svg.svg" alt="weather-icon"></span>
+            <table id="weather-table">
+                <tr>
+                    <td class="criterion">Temperature:</td>
+                    <td class="value" id="temperature">13</td>
+                </tr>
+                <tr>
+                    <td class="criterion">Condtions:</td>
+                    <td class="value" id="temperature">Cool and Showery</td>
+                </tr>
+
+                <tr>
+                    <td class="criterion">Wind:</td>
+                    <td class="value" id="wind">14.4</td>
+                </tr>
+                <tr>
+                    <td class="criterion">Wind Chill:</td>
+                    <td class="value" id="wind-chill"></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="footer-content">
+            <p>
+                &copy;<span id="currentYear"></span>
+                <span>Godwin Bassey</span>
+                <span>British Columbia</span>
+            </p>
+            <p id="lastModified">
+        </div>
+
+        <p id="attribution">Pictures from <a href="https://www.wallpaperflare.com/">Wallpaper flare</a> <br> Icons from
+            <a href="https://fonts.google.com/icons">Google icons</a>
+        </p>
+    </footer>
+</body>
+
+</html>
