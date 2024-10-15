@@ -65,6 +65,8 @@ h3 {
 section {
     text-align: center;
     background: #1a1a1a;
+    max-height: 25em;
+    margin: 10px;
 }
 
 .location, .area, .dedicated {
