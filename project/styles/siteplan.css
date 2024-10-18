@@ -7,7 +7,6 @@
 body {
     background: #12110c;
     font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
@@ -44,10 +43,11 @@ section h2 {
     font-family: "Arvo", serif;
     font-weight: 400;
     font-style: normal;
+    text-align: right;
 }
 
 main {
-    max-width: 960px;
+    max-width: 900px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -60,6 +60,7 @@ h2 {
 
 section:nth-child(odd) h2{
     color: #48A9A6;
+    text-align: left;
 }
 
 li {
@@ -70,22 +71,36 @@ li {
 
 .site-name {
     grid-column: 1 / 2;
+    grid-row: 1 / 2;
 }
 
 .site-purpose {
     grid-column: 2 / 3;
+    grid-row: 2 / 3;
 }
 
 .scenarios {
     grid-column: 1 / 3;
+    max-width: fit-content;
+}
+
+.color-schema {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
+
+.typography {
+    grid-column: 1 / 3;
+    grid-row: 5 / 6;
+    max-width: fit-content;
 }
 
 .wireframe {
     grid-column: 1 / 3;
 }
 
-img {
-    width: ;
+.wireframe h2 {
+    text-align: right;
 }
 
 .mobile {
@@ -98,5 +113,8 @@ img {
         flex-direction: column;
     }
 
-
+    .wireframe h2, section h2{
+        text-align: left;
+    }
+    
 }
