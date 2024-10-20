@@ -109,61 +109,21 @@ option:not(:first-child) {
 }
 
 
+@media screen and (max-width: 480px) {
+    .prf select, .prf input[type="date"]  {
+        max-width: 200px;
+    }
 
-/* main {
-    margin-top: 1rem;
-    background: lightblue;
-    padding-left: 1rem;
-    border-radius: 6px;
+    .prf input[type="text"],  .prf textarea {
+        max-width: 250px;
+    }
+
+    .prf .rating-div {
+        flex-direction: column;
+    }
+
+    .prf input[type="radio"] {
+        margin-top: .75rem;
+    }
 }
-
-.form-desc {
-    padding-top: 10px;
-    color: red;
-}
-
-label, #product-name, #install-date, #review, #username {
-    display: block;
-}
-
-label.rating {
-    display: inline;
-}
-
-input[type="radio"] {
-    margin-left: 1rem;
-}
-
-label {
-    margin-top: 1rem;
-    color: navy;
-}
-
-div {
-    color: navy;
-}
-
-#product-name, #install-date, #review, #username {
-    margin-bottom: 1rem;
-    padding: .75rem;
-    border-radius: 6px;
-    width: 20rem;
-    max-width: 400px;
-}
-
-input[type="submit"] {
-    padding: 10px;
-    width: 50%;
-    text-align: center;
-    margin-bottom: 5px;
-    border-radius: 6px;
-}
-
-.check {
-    margin: 5px;
-    color: black;
-} */ 
-
-
-
 
