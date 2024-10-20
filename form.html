@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="Author" content="Godwin Bassey">
+    <meta name="Description" content="Week 05 product review form assignment">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get" class="prf">
+            <div class="review-counter form-desc"></div>
+            <div class="form-desc">Required Field<span class="asterisk">*</span></div>
+    
+            <fieldset>
+                <label>Product Name<span class="asterisk">*</span> <select name="product-name" id="product-name" required>
+                    <option value="" disabled selected>Select a product...</option>
+                </select></label>
+            </fieldset>
+    
+            <!-- <div>Overall Rating*</div> -->
+             <fieldset>
+                <div>Overall Rating<span class="asterisk">*</span></div>
+                <div class="rating-div">
+                    <label class="rating">
+                        <input type="radio" name="rating" id="one-star" required>⭐
+                        </label>
+                        <label class="rating">
+                            <input type="radio" name="rating" id="two-star" required>⭐⭐
+                        </label> 
+                        <label class="rating">
+                            <input type="radio" name="rating" id="three-star" required> ⭐⭐⭐
+                        </label>
+                        <label class="rating">
+                            <input type="radio" name="rating" id="four-star" required> ⭐⭐⭐⭐
+                        </label>
+                        <label class="rating">
+                            <input type="radio" name="rating" id="five-star" required> ⭐⭐⭐⭐⭐
+                        </label>
+                </div>
+            </fieldset>
+        
+            <fieldset>
+                <label>Date of Installation<span class="asterisk">*</span> <input type="date" name="install-date" id="install-date" required></label>
+            </fieldset>
+
+            <fieldset>
+                <div>Which features did you find useful in the product? <span id="check-desc">(Check all that apply)</span></div>
+
+                <label class="check">
+                    <input type="checkbox" name="durability" value="yes" id="durability"> Durability
+                </label>
+                <label class="check"> 
+                    <input type="checkbox" name="ease-of-use" value="yes" id="ease-of-use"> Ease of use
+                </label>
+                <label class="check">
+                    <input type="checkbox" name="performance" value="yes" id="performance"> Performance
+                </label>
+                <label class="check">
+                    <input type="checkbox" name="design" value="yes" id="design"> Design
+                </label>
+                <label class="check">
+                    <input type="checkbox" name="resale-value" value="yes" id="resale-value"> Good resale value
+                </label>
+            </fieldset>
+            
+            <fieldset>
+                <label>Write a review <textarea name="written-review" id="review"></textarea></label>
+            </fieldset>
+            
+            <fieldset>
+                <label>What is your name? <input type="text" id="username" name="username"></label>
+            </fieldset>
+            <fieldset>
+                <input id="submit" type="submit" value="Post Review">
+            </fieldset>
+            
+        </form>
+    </main>
+    <footer>
+        <p>
+            &copy;<span id="currentYear"></span>
+            <span>Godwin Bassey</span>
+            <span>Calabar, Nigeria</span>
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

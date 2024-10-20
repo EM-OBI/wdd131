@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+}
+
+header, footer {
+    background: #008cba;
+    min-height: 4rem;
+    text-align: center;
+    border-radius: 6px;
+    padding-top: 1rem;
+}
+
+.prf .form-desc {
+    padding-left: 5px;
+    color: navy;
+}
+
+.prf fieldset {
+    margin: 1rem 0;
+    padding: .5rem 1rem;
+    background: lightblue;
+    border-radius: 6px;
+}
+
+.prf label, div {
+    display: block;
+    color: navy;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+}
+
+.prf .check {
+    color: black;
+    font-weight: 400;
+}
+
+.prf select, .prf input[type="date"], .prf input[type="text"],  .prf textarea {
+    display: block;
+    border: 2px solid navy;
+    border-radius: 6px;
+    padding: .75rem;
+    width: 100%;
+    max-width: 400px;
+    background: #ddd;
+    color: #005;
+}
+
+.prf input[type="submit"] {
+    width: 96%;
+    max-width: 400px;
+    background: #008cba;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 5px #005f73;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    padding: 1rem 0;
+    margin: 1rem 2% 2rem 2%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.prf input[type="submit"]:hover {
+    box-shadow: 0 3px #005f73;
+    transform: translateY(2px);
+}
+
+.prf input[type="submit"]:active {
+    box-shadow: 0 1px #005f73;
+    transform: translateY(2px);
+}
+
+option:not(:first-child) {
+    text-transform: capitalize;
+}
+
+.prf .asterisk {
+    color: red;
+}
+
+.prf input:required, .prf select:required {
+    background: #fdd;
+    color: black;
+    font-weight: bold;
+}
+
+.prf input:required:valid, .prf select:required:valid {
+    background: #dfd;
+}
+
+.prf input[type="checkbox"] {
+    margin-top: .75rem;
+}
+
+.prf .rating-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 0.2rem;
+}
+
+
+
+/* main {
+    margin-top: 1rem;
+    background: lightblue;
+    padding-left: 1rem;
+    border-radius: 6px;
+}
+
+.form-desc {
+    padding-top: 10px;
+    color: red;
+}
+
+label, #product-name, #install-date, #review, #username {
+    display: block;
+}
+
+label.rating {
+    display: inline;
+}
+
+input[type="radio"] {
+    margin-left: 1rem;
+}
+
+label {
+    margin-top: 1rem;
+    color: navy;
+}
+
+div {
+    color: navy;
+}
+
+#product-name, #install-date, #review, #username {
+    margin-bottom: 1rem;
+    padding: .75rem;
+    border-radius: 6px;
+    width: 20rem;
+    max-width: 400px;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 5px;
+    border-radius: 6px;
+}
+
+.check {
+    margin: 5px;
+    color: black;
+} */ 
+
+
+
+
