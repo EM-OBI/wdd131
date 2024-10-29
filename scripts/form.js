@@ -13,6 +13,7 @@ const getLastModSecond = oLastModif.getSeconds();
 currentYear.innerHTML = `<span>${currentDate.getFullYear()}</span>`;
 dateLastModif.innerHTML = `<span>Last Modified: ${getLastModDate}/${getLastModMonth}/${getLastModYear} ${getLastModHour}:${getLastModMinute}:${getLastModSecond}</span>`
 
+
 //create options and populate product name
 const products = [
     {
@@ -54,19 +55,6 @@ function populateProducts(products) {
     });
 }
 
-// localStorage
-const reviewCountDisplay = document.querySelector(".review-counter");
 
-let submissions = Number(window.localStorage.getItem("submissions-count")) || 0;
 
-    if (submissions === 0) {
-        reviewCountDisplay.textContent = "Welcome, please leave a review";
-    } else {
-        reviewCountDisplay.textContent = `Products reviewed: ${submissions}`;
-    }
 
-document.querySelector("input[type='submit']").addEventListener("click", () => {
-    submissions++;
-
-    localStorage.setItem("submissions-count", submissions);
-});

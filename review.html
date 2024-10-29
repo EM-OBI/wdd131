@@ -3,12 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thank you</title>
+    <title>Review</title>
+    <meta name="Author" content="Godwin Bassey">
+    <meta name="Description" content="Week 05 product review form assignment as a part of WDD 131 course requirements">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="scripts/review.js" defer></script>
 </head>
+<header>
+    <h1>Product Review</h1>
+</header>
 <body>
-    <script>
-        alert("Thank you for submitting a review!");
-        history.back();
-    </script>
+    <div>Number of reviews: <span class="reviews"></span></div>
 </body>
+<footer>
+    <p>
+        &copy;<span id="currentYear"></span>
+        <span>Godwin Bassey</span>
+        <span>Calabar, Nigeria</span>
+    </p>
+    <p id="lastModified"></p>
+</footer>
 </html>
