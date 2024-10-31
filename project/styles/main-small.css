@@ -49,6 +49,7 @@ header {
     grid-column: 1 / 3;
     margin-bottom: 0.75rem;
     text-decoration: underline;
+    font-size: 1.5rem;
 }
 
 #green {
@@ -74,7 +75,7 @@ a {
 }
 
 a:hover {
-    border: 2px solid #ffe;
+    color: #48A9A6;
 }
 
 footer {
@@ -94,8 +95,8 @@ a span {
 }
 
 a span:hover {
-    background-color: #12110c;
-    color: #ffe;
+    background-color: #ffe;;
+    color: #E94F37;
 }
 
 #hamburger::before {
@@ -171,12 +172,11 @@ section>a {
         1px 1px 0 black;
     text-transform: uppercase;
     font-family: "Arvo", serif;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
     
 }
 
 section:hover {
-    color: #fee;
     transform: scale(1.05);
 }
 
@@ -224,7 +224,7 @@ section:nth-child(even)::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(72, 169, 166, 0.5);
+    background-color: rgba(72, 169, 166, 0.4);
 }
 
 section:nth-child(odd)::before {
@@ -273,7 +273,7 @@ article.r-fs {
     display: flex;
     flex-direction: column;
     width: 100%;
-    grid-template-columns: 1 / 3;
+    grid-column: 1 / 3;
 }
 
 #content-box li {
