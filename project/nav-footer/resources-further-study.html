@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resources and further study</title>
+    <meta name="Author" content="Godwin Bassey">
+    <meta name="Description" content="Home page for Dentsitry OTG">
+    <link rel="stylesheet" href="../styles/main-small.css">
+    <link rel="stylesheet" href="../styles/main-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Londrina+Sketch&family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+    <script src="../scripts/app.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="../images/logo.svg" alt="logo" class="logo" loading="lazy">
+        <a href="../index.html"><h1>Denistry OTG</h1></a>
+        <span id="hamburger"></span>
+        <nav>
+            <ul class="nav-items">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="study-plan.html">Study plan</a></li>
+                <li><a href="resources-further-study.html">Further study</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="page-title"></h2>
+        <div id="banner">
+            <!-- use dynamic js to generate welcome message based on local storage number of visits -->
+            <p class="welcome-message"></p>
+            <form action="username" method="get" class="name-form">
+                <p id="form-instr">All fields required</p>
+
+                <label>What is your name? <input type="text" id="username" name="username" required autocomplete="additional-name"></label>
+
+                <label>When is your exam? <input type="date" name="install-date" id="exam-date" required></label>
+                <input id="submit" type="submit" value="Submit Username">
+            </form>
+        </div>
+        <article class="r-fs">
+            <h3>Resources</h3>
+            <p>Dental Secrets by STEPHEN T. SONIS, DMD, DMSc (4th edition)</p>
+        </article>
+        <article class="r-fs">
+            <h3>Futher study</h3>
+            <ul>
+                <li>Anatomy for Dental Students by D R Johnson, W J Moore</li>
+                <li>Oral Anatomy, Histology and Embryology (3rd Edition) by B K B Berkovitz & B J Moxham</li>
+                <li>Oral Pathology (4th edition) by J V Soames, J C Southam</li>
+                <li>Oral Microbiology by P Marsh, M V Martin</li>
+                <li>The Prevention of Oral Disease (4th edition) J Murray, J H Nunn & J G Steele</li>
+                <li>Pickard’s Manual of Operative Dentistry (8th edition) by E A M Kidd, B G N Smith & T F Watson</li>
+                <li>A Clinical Guide to Oral Medicine by P-J Lamey, M A O Lewis</li>
+                <li>Oral and Maxillofacial Surgery by J Pedlar, J W Frame</li>
+            </ul>
+        </article>
+    </main>
+    <footer>
+        <p>
+            &copy;<span id="currentYear"></span>
+            <span>Godwin Bassey</span>
+            <span>Calabar, Nigeria</span>
+        </p>
+        <p id="lastModified"></p>
+        <p>
+            <a href="resources-further-study.html"><span>References</span></a>
+        </p>
+    </footer>
+</body>
+
+</html>

@@ -11,20 +11,20 @@
     <link rel="stylesheet" href="styles/main-large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Londrina+Sketch&family=Montserrat:ital@0;1&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Londrina+Sketch&family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+    <script src="scripts/app.js" defer></script>
 </head>
 
 <body>
     <header>
-        <span id="logo"></span>
-        <h1>Denistry On The Go</h1>
+        <img src="images/logo.svg" alt="logo" class="logo" loading="lazy">
+        <a href="index.html"><h1>Denistry OTG</h1></a>
+        <span id="hamburger"></span>
         <nav>
-            <ul>
+            <ul class="nav-items">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="nav-footer/study-plan.html">Study plan</a></li>
-                <li><a href="further-study.html">Further study</a></li>
+                <li><a href="nav-footer/resources-further-study.html">Further study</a></li>
                 <li><a href="nav-footer/contact.html">Contact us</a></li>
             </ul>
         </nav>
@@ -37,46 +37,36 @@
             <form action="username" method="get" class="name-form">
                 <p id="form-instr">All fields required</p>
 
-                <label>What is your name? <input type="text" id="username" name="username" required></label>
+                <label>What is your name? <input type="text" id="username" name="username" required autocomplete="additional-name"></label>
 
                 <label>When is your exam? <input type="date" name="install-date" id="exam-date" required></label>
-                <input id="submit" type="submit" value="Submit username">
+                <input id="submit" type="submit" value="Start Studying">
             </form>
-            <p class="exam-countdown"></p>
+        </div>
+        <div class="site-instr">
+            <p>Text in <span id="green">green</span> are "nice to know".
+            <p>Text in <span id="red">red</span> are "must know".
+            </p>
+        </div>
+        <div class="title-cards">
+            <section class="perio"><img src="images/perio.webp" alt="periodontics" width="300" height="150" loading="lazy"><a href="specialties/perio.html">Periodontics</a></section>
+            <section class="preventive"><img src="images/prev.webp" alt="preventive" width="300" height="150" loading="lazy"><a href="specialties/preventive.html">Preventive Dentistry</a></section>
+            <section class="resto"><img src="images/resto.webp" alt="restorative" width="300" height="150" loading="lazy"><a href="specialties/restorative.html">Restorative Dentistry</a></section>
+            <section class="omfs"><img src="images/omfs.webp" alt="omfs" width="300" height="150" loading="lazy"><a href="specialties/omfs.html">Oral and Maxillofacial Surgery</a></section>
+            <section class="om-op"><img src="images/omop.webp" alt="oral-medicine-oral-pathology" width="300" height="150" loading="lazy"><a href="specialties/om-op.html">Oral Medicine/Oral Pathology</a></section>
+            <section class="oral-biology"><img src="images/ob.webp" alt="oral-biology" width="300" height="150" loading="lazy"><a href="specialties/oral-biology.html">Oral Biology</a></section>
         </div>
 
-        <section class="perio"><a href="specialties/perio.html">Periodontics</a></section>
-        <section class="preventive"><a href="specialties/preventive.html">Preventive Dentistry</a></section>
-        <section class="resto"><a href="specialties/restorative.html">Restorative Dentsitry</a></section>
-        <section class="omfs"><a href="specialties/omfs.html">Oral and Maxillofacial Surgery</a></section>
-        <section class="om-op"><a href="specialties/om-op.html">Oral Medicine/Oral Pathology</a></section>
-        <section class="oral-biology"><a href="specialties/oral-biology.html">Oral Biology</a></section>
-
-        <div id="faq">
-            <ul>
-                <li>faq 1</li>
-                <li>faq 2</li>
-                <li>faq 3</li>
-                <li>faq 4</li>
-                <li>faq 5</li>
-            </ul>
-        </div>
-        <div id="sidebar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="specialties/perio.html">Periodontics</a></li>
-                <li><a href="specialties/preventive.html">Preventive Dentistry</a></li>
-                <li><a href="specialties/restorative.html">Restorative Dentistry</a></li>
-                <li><a href="specialties/omfs.html">Oral and Maxillofacial Surgery</a></li>
-                <li><a href="specialties/om-op.html">Oral Medicine/Oral Pathology</a></li>
-                <li><a href="specialties/oral-biology.html">Oral Biology</a>Oral Biology</li>
-                <li><a href="nav-footer/resources-further-study.html">Further Study</a></li>
-            </ul>
-        </div>
     </main>
     <footer>
         <p>
-            <a href="#">References</a>
+            &copy;<span id="currentYear"></span>
+            <span>Godwin Bassey</span>
+            <span>Calabar, Nigeria</span>
+        </p>
+        <p id="lastModified"></p>
+        <p>
+            <a href="nav-footer/resources-further-study.html"><span>References</span></a>
         </p>
     </footer>
 </body>

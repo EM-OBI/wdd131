@@ -4,28 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>preventive</title>
+    <title>preventive dentistry</title>
     <meta name="Author" content="Godwin Bassey">
     <meta name="Description" content="Home page for Dentsitry OTG">
-    <link rel="stylesheet" href="styles/main-small.css">
-    <link rel="stylesheet" href="styles/main-large.css">
+    <link rel="stylesheet" href="../styles/main-small.css">
+    <link rel="stylesheet" href="../styles/main-large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Londrina+Sketch&family=Montserrat:ital@0;1&display=swap"
         rel="stylesheet">
+    <script src="../scripts/app.js" defer></script>
 </head>
 
 <body>
     <header>
-        <span id="logo"></span>
-        <h1>Denistry On The Go</h1>
+        <img src="../images/logo.svg" alt="logo" class="logo" loading="lazy">
+        <a href="../index.html"><h1>Denistry OTG</h1></a>
+        <span id="hamburger"></span>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="nav-footer/study-plan.html">Study plan</a></li>
-                <li><a href="further-study.html">Further study</a></li>
-                <li><a href="nav-footer/contact.html">Contact us</a></li>
+            <ul class="nav-items">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../nav-footer/study-plan.html">Study plan</a></li>
+                <li><a href="../nav-footer/resources-further-study.html">Further study</a></li>
+                <li><a href="../nav-footer/contact.html">Contact us</a></li>
             </ul>
         </nav>
     </header>
@@ -33,45 +35,75 @@
         <h2 class="page-title"></h2>
         <div id="banner">
             <!-- use dynamic js to generate welcome message based on local storage number of visits -->
-            <p class="exam-countdown"></p>
+            <p class="welcome-message"></p>
+            <form action="username" method="get" class="name-form">
+                <p id="form-instr">All fields required</p>
+
+                <label>What is your name? <input type="text" id="username" name="username" required autocomplete="additional-name"></label>
+
+                <label>When is your exam? <input type="date" name="install-date" id="exam-date" required></label>
+                <input id="submit" type="submit" value="Submit Username">
+            </form>
         </div>
         <div id="content-box">
-            <section class="content"></section>
-            <section class="content"></section>
-            <section class="content"></section>
-            <section class="content"></section>
-            <section class="content"></section>
-            <section class="content"></section>
-            <section class="content"></section>
-            <section class="content"></section>
-            <section class="content"></section>
-            <section class="content"></section>
-        </div>
-        <div id="faq">
-            <ul>
-                <li>faq 1</li>
-                <li>faq 2</li>
-                <li>faq 3</li>
-                <li>faq 4</li>
-                <li>faq 5</li>
-            </ul>
-        </div>
-        <div id="sidebar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="specialties/perio.html">Periodontics</a></li>
-                <li><a href="specialties/preventive.html">Preventive Dentistry</a></li>
-                <li><a href="specialties/restorative.html">Restorative Dentistry</a></li>
-                <li><a href="specialties/omfs.html">Oral and Maxillofacial Surgery</a></li>
-                <li><a href="specialties/om-op.html">Oral Medicine/Oral Pathology</a></li>
-                <li><a href="specialties/oral-biology.html">Oral Biology</a>Oral Biology</li>
-                <li><a href="nav-footer/resources-further-study.html">Further Study</a></li>
-            </ul>
+            <article class="must">
+                <h3>What is the definition of public health in its broadest sense?</h3>
+                <p>
+                The World Health Organization defines public health as “all organized measures (whether public or private) to prevent disease, promote health, and prolong life among the population as a whole.”
+                </p>
+            </article>
+
+            <article class="must">
+                <h3>What are the three tenets of public health?</h3>
+                <p>
+                    <ol>
+                        <li>A problem exists.</li>
+                        <li>Solutions to the problem exist.</li>
+                        <li>The solutions to the problem are applied.</li>
+                    </ol>
+                </p>
+            </article>
+
+            <article class="must">
+                <h3>Public health efforts are usually directed toward acute problems, such as infectious disease, or chronic diseases such as cancer. What public health strategies are similar for these and most other diseases?</h3>
+                <p>
+                    <ol>
+                        <li>Surveillance</li>
+                        <li>Intervention</li>
+                        <li>Evaluation</li>
+                    </ol>
+                </p>
+            </article>
+
+            <article class="must">
+                <h3>What constitutes a public health problem?</h3>
+                <p>
+                A public health problem usually fulfills three criteria of the public, government, or public health authorities:
+                <ol>
+                    <li>A condition or situation exists that is a widespread actual or potential cause of morbidity or mortality</li>
+                    <li> Costs to community and to individuals are great.</li>
+                    <li>Effective methods available to prevent, alleviate or cure.</li>
+                </ol>
+                </p>
+            </article>
+
+            <article class="nice">
+                <h3>Describe the U.S. Occupational Safety and Health Administration (OSHA) and its role in dental practice.</h3>
+                <p>
+                The mission of OSHA is to ensure the safety and health of U.S. workers. As part of the Department of Labor, OSHA and the states that operate OSHA-approved state plans establish guidelines and standards to promote worker safety and health that apply to every workplace, including medical and dental offices. The work practice control, engineering control, and personal protective equipment regulations are examples of OSHA safety topics that have a direct impact on dental infection control. The regulations designed to protect the dental health care worker often translate into increased safety for the dental patient.
+                </p>
+            </article>
         </div>
     </main>
     <footer>
         <p>
-            <a href="#">References</a>
+            &copy;<span id="currentYear"></span>
+            <span>Godwin Bassey</span>
+            <span>Calabar, Nigeria</span>
+        </p>
+        <p id="lastModified"></p>
+        <p>
+            <a href="../nav-footer/resources-further-study.html"><span>References</span></a>
         </p>
     </footer>
 </body>

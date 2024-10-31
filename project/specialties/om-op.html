@@ -7,25 +7,27 @@
     <title>oral medicine and pathology</title>
     <meta name="Author" content="Godwin Bassey">
     <meta name="Description" content="Home page for Dentsitry OTG">
-    <link rel="stylesheet" href="styles/main-small.css">
-    <link rel="stylesheet" href="styles/main-large.css">
+    <link rel="stylesheet" href="../styles/main-small.css">
+    <link rel="stylesheet" href="../styles/main-large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Londrina+Sketch&family=Montserrat:ital@0;1&display=swap"
         rel="stylesheet">
+    <script src="../scripts/app.js" defer></script>
 </head>
 
 <body>
     <header>
-        <span id="logo"></span>
-        <h1>Denistry On The Go</h1>
+        <img src="../images/logo.svg" alt="logo" class="logo" loading="lazy">
+        <a href="../index.html"><h1>Denistry OTG</h1></a>
+        <span id="hamburger"></span>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="nav-footer/study-plan.html">Study plan</a></li>
-                <li><a href="further-study.html">Further study</a></li>
-                <li><a href="nav-footer/contact.html">Contact us</a></li>
+            <ul class="nav-items">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../nav-footer/study-plan.html">Study plan</a></li>
+                <li><a href="../nav-footer/resources-further-study.html">Further study</a></li>
+                <li><a href="../nav-footer/contact.html">Contact us</a></li>
             </ul>
         </nav>
     </header>
@@ -33,45 +35,86 @@
         <h2 class="page-title"></h2>
         <div id="banner">
             <!-- use dynamic js to generate welcome message based on local storage number of visits -->
-            <p class="exam-countdown"></p>
+            <p class="welcome-message"></p>
+            <form action="username" method="get" class="name-form">
+                <p id="form-instr">All fields required</p>
+
+                <label>What is your name? <input type="text" id="username" name="username" required autocomplete="additional-name"></label>
+
+                <label>When is your exam? <input type="date" name="install-date" id="exam-date" required></label>
+                <input id="submit" type="submit" value="Submit Username">
+            </form>
         </div>
         <div id="content-box">
-            <section class="content"></section>
-            <section class="content"></section>
-            <section class="content"></section>
-            <section class="content"></section>
-            <section class="content"></section>
-            <section class="content"></section>
-            <section class="content"></section>
-            <section class="content"></section>
-            <section class="content"></section>
-            <section class="content"></section>
-        </div>
-        <div id="faq">
-            <ul>
-                <li>faq 1</li>
-                <li>faq 2</li>
-                <li>faq 3</li>
-                <li>faq 4</li>
-                <li>faq 5</li>
-            </ul>
-        </div>
-        <div id="sidebar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="specialties/perio.html">Periodontics</a></li>
-                <li><a href="specialties/preventive.html">Preventive Dentistry</a></li>
-                <li><a href="specialties/restorative.html">Restorative Dentistry</a></li>
-                <li><a href="specialties/omfs.html">Oral and Maxillofacial Surgery</a></li>
-                <li><a href="specialties/om-op.html">Oral Medicine/Oral Pathology</a></li>
-                <li><a href="specialties/oral-biology.html">Oral Biology</a>Oral Biology</li>
-                <li><a href="nav-footer/resources-further-study.html">Further Study</a></li>
-            </ul>
+            <article class="must">
+                <h3>Name the three main forms of amelogenesis imperfecta.</h3>
+                <p>
+                    <ol>
+                        <li><strong>Hypoplastic form:</strong> inadequate deposition of enamel matrix. Whatever is deposited calcifies normally. The teeth have thin enamel that may be pitted.</li>
+                        <li><strong>Hypomaturation form:</strong> adequate deposition of enamel, but the enamel crystal does not mature normally. The result is soft pigmented enamel that chips easily</li>
+                        <li><strong>Hypocalcified form:</strong>  inadequate mineralization. The result is enamel that gets lost a few years after eruption.</li>
+                    </ol>
+                </p>
+            </article>
+
+            <article class="must">
+                <h3>Describe the different types of dentinogenesis imperfecta.</h3>
+                <p>
+                Dentinogenesis imperfecta (DI) is a condition caused by abnormal dentin formation and several types exist. The classic type lead to opalescent teeth in the primary and permanent dentition. The teeth are bluish-brown and translucent. Enamel is lost early, and the exposed dentine undergoes rapid attrition.
+                <table>
+                    <tr>
+                        <td>Osteogenesis imperfecta with opalescent teeth</td>
+                        <td>Dentin dysplasia Type I</td>
+                    </tr>
+                    <tr>
+                        <td>Dentinogenesis imperfecta</td>
+                        <td>Dentin dysplasia Type II</td>
+                    </tr>
+                </table>
+                </p>
+            </article>
+
+            <article class="nice">
+                <h3> Describe the two main types of dentin dysplasia.</h3>
+                <p>
+                    <ul>
+                        <li><strong>Type I, radicular type. </strong>The roots are poorly formed, short, and distorted or even absent, with poorly formed crescent-shaped pulp chambers and absent pulp canals. Periapical lucencies develop early and teeth exfoliate prematurely</li>
+                        <li><strong>Type II, coronal type. </strong>The crowns contain large pulp chambers that are thistle- or flameshaped, that extend into the root. Pulp stones often develop. Primary teeth look like those of dentinogenesis imperfect with early obliteration of the pulp.</li>
+                    </ul>
+                </p>
+            </article>
+
+            <article class="must">
+                <h3>What is the difference between fusion and concrescence? Between twinning and gemination?</h3>
+                <p>
+                Fusion is a more complete process than concrescence and involves fusion of the entire
+                length of two teeth (enamel, dentin, and cementum) to form one large tooth, with one
+                less tooth in the arch, or fusion of the root only (dentin and cementum), with the maintenance of two clinical crowns. Concrescence involves fusion of cementum only.
+                </p>
+    
+                <p>
+                Twinning is more complete than gemination and results in the formation of two separate teeth from one tooth bud (one extra tooth in the arch). In gemination, separation is
+                attempted, but the two teeth share the same root canal.
+                </p>
+            </article>
+
+            <article class="must">
+                <h3>What is a Turner tooth?</h3>
+                <p>
+                A Turner tooth is a solitary, usually permanent tooth with signs of enamel hypoplasia or hypocalcification. This phenomenon is caused by trauma or infection in the overlying deciduous tooth that damages the ameloblasts of the underlying tooth bud and thus leads to localized enamel hypoplasia or hypocalcification.
+                </p>
+            </article>
         </div>
     </main>
     <footer>
         <p>
-            <a href="#">References</a>
+            &copy;<span id="currentYear"></span>
+            <span>Godwin Bassey</span>
+            <span>Calabar, Nigeria</span>
+        </p>
+        <p id="lastModified"></p>
+        <p>
+            <a href="../nav-footer/resources-further-study.html"><span>References</span></a>
         </p>
     </footer>
 </body>

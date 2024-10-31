@@ -7,25 +7,27 @@
     <title>periodontics</title>
     <meta name="Author" content="Godwin Bassey">
     <meta name="Description" content="Home page for Dentsitry OTG">
-    <link rel="stylesheet" href="styles/main-small.css">
-    <link rel="stylesheet" href="styles/main-large.css">
+    <link rel="stylesheet" href="../styles/main-small.css">
+    <link rel="stylesheet" href="../styles/main-large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Londrina+Sketch&family=Montserrat:ital@0;1&display=swap"
         rel="stylesheet">
+    <script src="../scripts/app.js" defer></script>
 </head>
 
 <body>
     <header>
-        <span id="logo"></span>
-        <h1>Denistry On The Go</h1>
+        <img src="../images/logo.svg" alt="logo" class="logo" loading="lazy">
+        <a href="../index.html"><h1>Denistry OTG</h1></a>
+        <span id="hamburger"></span>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="nav-footer/study-plan.html">Study plan</a></li>
-                <li><a href="further-study.html">Further study</a></li>
-                <li><a href="nav-footer/contact.html">Contact us</a></li>
+            <ul class="nav-items">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../nav-footer/study-plan.html">Study plan</a></li>
+                <li><a href="../nav-footer/resources-further-study.html">Further study</a></li>
+                <li><a href="../nav-footer/contact.html">Contact us</a></li>
             </ul>
         </nav>
     </header>
@@ -33,45 +35,64 @@
         <h2 class="page-title"></h2>
         <div id="banner">
             <!-- use dynamic js to generate welcome message based on local storage number of visits -->
-            <p class="exam-countdown"></p>
+            <p class="welcome-message"></p>
+            <form action="username" method="get" class="name-form">
+                <p id="form-instr">All fields required</p>
+
+                <label>What is your name? <input type="text" id="username" name="username" required autocomplete="additional-name"></label>
+
+                <label>When is your exam? <input type="date" name="install-date" id="exam-date" required></label>
+                <input id="submit" type="submit" value="Submit Username">
+            </form>
         </div>
         <div id="content-box">
-            <section class="content"></section>
-            <section class="content"></section>
-            <section class="content"></section>
-            <section class="content"></section>
-            <section class="content"></section>
-            <section class="content"></section>
-            <section class="content"></section>
-            <section class="content"></section>
-            <section class="content"></section>
-            <section class="content"></section>
-        </div>
-        <div id="faq">
-            <ul>
-                <li>faq 1</li>
-                <li>faq 2</li>
-                <li>faq 3</li>
-                <li>faq 4</li>
-                <li>faq 5</li>
-            </ul>
-        </div>
-        <div id="sidebar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="specialties/perio.html">Periodontics</a></li>
-                <li><a href="specialties/preventive.html">Preventive Dentistry</a></li>
-                <li><a href="specialties/restorative.html">Restorative Dentistry</a></li>
-                <li><a href="specialties/omfs.html">Oral and Maxillofacial Surgery</a></li>
-                <li><a href="specialties/om-op.html">Oral Medicine/Oral Pathology</a></li>
-                <li><a href="specialties/oral-biology.html">Oral Biology</a>Oral Biology</li>
-                <li><a href="nav-footer/resources-further-study.html">Further Study</a></li>
-            </ul>
+            <article class="must">
+                <h3>Anatomically, what makes up the components of periodontium?</h3>
+                <p>
+                    <ul>
+                        <li>The gingiva</li>
+                        <li>Periodontal ligament</li>
+                        <li>Root cementum</li>
+                        <li>Alveolar bone</li>
+                    </ul>
+                </p>
+
+            </article>
+
+            <article class="nice">
+                <h3>Sharpey’s fibers are mainly composed of what type of collagen?</h3>
+                <p>They are mostly type I collagen.</p>
+            </article>
+
+            <article class="must">
+                <h3>What connective tissue fibers are normally found in the gingiva?</h3>
+                <p>Histologically, the fibers described are the dentogingival, dentoalveolar, dentoperiosteal, circular, and transseptal fibers.</p>
+            </article>
+
+            <article class="nice">
+               <h3>What portion of the root is covered by acellular cementum? What portion of the root is covered by cellular cementum?</h3> 
+               <p>
+                Acellular cementum is located in the coronal and middle portion of the root. Cellular cementum is located in the apical third of the root.
+               </p>
+            </article>
+
+            <article class="nice">
+                <h3>What are the components of the organic matrix of alveolar bone?What are the components of the organic matrix of alveolar bone?</h3>
+                <p>
+                They are mainly type I collagen (90%), with small amounts of noncollagenous proteins.
+                </p>
+            </article>
         </div>
     </main>
     <footer>
         <p>
-            <a href="#">References</a>
+            &copy;<span id="currentYear"></span>
+            <span>Godwin Bassey</span>
+            <span>Calabar, Nigeria</span>
+        </p>
+        <p id="lastModified"></p>
+        <p>
+            <a href="../nav-footer/resources-further-study.html"><span>References</span></a>
         </p>
     </footer>
 </body>

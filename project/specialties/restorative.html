@@ -4,28 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>restorative</title>
+    <title>restorative dentistry</title>
     <meta name="Author" content="Godwin Bassey">
     <meta name="Description" content="Home page for Dentsitry OTG">
-    <link rel="stylesheet" href="styles/main-small.css">
-    <link rel="stylesheet" href="styles/main-large.css">
+    <link rel="stylesheet" href="../styles/main-small.css">
+    <link rel="stylesheet" href="../styles/main-large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Londrina+Sketch&family=Montserrat:ital@0;1&display=swap"
         rel="stylesheet">
+    <script src="../scripts/app.js" defer></script>
 </head>
 
 <body>
     <header>
-        <span id="logo"></span>
-        <h1>Denistry On The Go</h1>
+        <img src="../images/logo.svg" alt="logo" class="logo" loading="lazy">
+        <a href="../index.html"><h1>Denistry OTG</h1></a>
+        <span id="hamburger"></span>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="nav-footer/study-plan.html">Study plan</a></li>
-                <li><a href="further-study.html">Further study</a></li>
-                <li><a href="nav-footer/contact.html">Contact us</a></li>
+            <ul class="nav-items">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../nav-footer/study-plan.html">Study plan</a></li>
+                <li><a href="../nav-footer/resources-further-study.html">Further study</a></li>
+                <li><a href="../nav-footer/contact.html">Contact us</a></li>
             </ul>
         </nav>
     </header>
@@ -33,45 +35,79 @@
         <h2 class="page-title"></h2>
         <div id="banner">
             <!-- use dynamic js to generate welcome message based on local storage number of visits -->
-            <p class="exam-countdown"></p>
+            <p class="welcome-message"></p>
+            <form action="username" method="get" class="name-form">
+                <p id="form-instr">All fields required</p>
+
+                <label>What is your name? <input type="text" id="username" name="username" required autocomplete="additional-name"></label>
+
+                <label>When is your exam? <input type="date" name="install-date" id="exam-date" required></label>
+                <input id="submit" type="submit" value="Submit Username">
+            </form>
         </div>
         <div id="content-box">
-            <section class="content"></section>
-            <section class="content"></section>
-            <section class="content"></section>
-            <section class="content"></section>
-            <section class="content"></section>
-            <section class="content"></section>
-            <section class="content"></section>
-            <section class="content"></section>
-            <section class="content"></section>
-            <section class="content"></section>
-        </div>
-        <div id="faq">
-            <ul>
-                <li>faq 1</li>
-                <li>faq 2</li>
-                <li>faq 3</li>
-                <li>faq 4</li>
-                <li>faq 5</li>
-            </ul>
-        </div>
-        <div id="sidebar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="specialties/perio.html">Periodontics</a></li>
-                <li><a href="specialties/preventive.html">Preventive Dentistry</a></li>
-                <li><a href="specialties/restorative.html">Restorative Dentistry</a></li>
-                <li><a href="specialties/omfs.html">Oral and Maxillofacial Surgery</a></li>
-                <li><a href="specialties/om-op.html">Oral Medicine/Oral Pathology</a></li>
-                <li><a href="specialties/oral-biology.html">Oral Biology</a>Oral Biology</li>
-                <li><a href="nav-footer/resources-further-study.html">Further Study</a></li>
-            </ul>
+            <article class="must">
+                <h3>What is the definition of dental caries?</h3>
+                <p>
+                Over the decades, a number of definitions for dental caries have evolved, depending on the perspective of the author. A few are presented here.
+                </p>
+                <p>
+                    <ol>
+                        <li>Dental caries is an infectious, communicable disease, resulting in destruction of tooth structure by acid-forming bacteria found in dental plaque, an intraoral biofilm, in the presence of sugar.</li>
+                        <li>Dental caries is an infectious, communicable, transmissible disease caused by bacterial invasion resulting in the breakdown of the tooth structure</li>
+                        <li>Dental caries is a microbial disease of the calcified tissues of the teeth, characterized by demineralization of the inorganic portion and destruction of the organic substance of the tooth. The former constitutes the acidogenic theory and the latter the proteolytic theory.</li>
+                    </ol>
+                </p>
+            </article>
+
+            <article class="nice">
+                <h3>List five key facts about dental caries.</h3>
+                <ol>
+                    <li>Dental caries, otherwise known as tooth decay, is one of the most prevalent chronic diseases of people worldwide; individuals are susceptible to this disease throughout their lifetime.</li>
+                    <li>Dental caries forms through a complex interaction over time between acid-producing bacteria and fermentable carbohydrates and many host factors related to teeth and saliva.</li>
+                    <li>The disease develops in the crowns and roots of teeth; it can arise in early childhood as an aggressive tooth decay that affects the primary teeth of infants and toddlers.</li>
+                    <li>Risk for caries includes physical, biologic, environmental, behavioral, and lifestylerelated factors (e.g high numbers of cariogenic bacteria, inadequate salivary flow, insufficient fluoride exposure, poor oral hygiene, inappropriate methods of feeding infants, malnutrition).</li>
+                    <li>The approach to primary prevention should be based on common risk factors. Secondary prevention and treatment should focus on management of the caries process over time for individual patients, with a minimally invasive, tissue-preserving approach.</li>
+                </ol>
+            </article>
+
+            <article class="nice">
+                <h3>According to the CDC (Centers for Disease Control and Prevention), what is the most common disease among children age 5 to 17 years?</h3>
+                <p>
+                Dental caries is now considered an epidemic in the United States and far exceeds the next most common disease, asthma (42% vs. 9.5%).
+                </p>
+            </article>
+
+            <article class="nice">
+                <h3>What are some prevalence statistics related to dental caries from the CDC?</h3>
+                <ul>
+                    <li>28% of children age 2 to 5 years have decay in their primary teeth.</li>
+                    <li>50% of children have decay by age 11 years.</li>
+                    <li>68% of 19-year-olds have decay in their permanent teeth.</li>
+                    <li>Children from lower income families are twice as likely to have decay than those from higher income families.</li>
+                    <li>16% of children age 6 to 19 years and 23% of adults 20 to 64 years have untreated dental caries.</li>
+                    <li> 85% of all adults experience tooth decay, and 60% of adults will lose a permanent tooth because of decay</li>
+                </ul>
+            </article>
+
+            <article class="must">
+                <h3>What is the dental plaque biofilm?</h3>
+                <p>
+                A biofilm is any group of microorganisms in which cells stick to each other on a surface.
+                These adherent cells are frequently embedded within a self-produced matrix. Dental plaque is structurally and functionally an organized biofilm. The community of microorganisms remains stable over time, with pathogenic organisms present in low numbers. In dental caries, there is a shift toward community dominance by acidogenic and acid-tolerating species. Evidence shows that conditions that foster a low pH select for the cariogenic species Streptococcus mutans and lactobacilli. The result is a higher acid level in the biofilm of acid production and demineralization of tooth structure.
+                </p>
+            </article>
         </div>
     </main>
     <footer>
         <p>
-            <a href="#">References</a>
+            &copy;<span id="currentYear"></span>
+            <span>Godwin Bassey</span>
+            <span>Calabar, Nigeria</span>
+        </p>
+        <p id="lastModified"></p>
+        <p>
+            <a href="../nav-footer/resources-further-study.html"><span>References</span></a>
         </p>
     </footer>
 </body>

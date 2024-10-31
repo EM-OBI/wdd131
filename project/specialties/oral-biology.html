@@ -7,25 +7,27 @@
     <title>oral biology</title>
     <meta name="Author" content="Godwin Bassey">
     <meta name="Description" content="Home page for Dentsitry OTG">
-    <link rel="stylesheet" href="styles/main-small.css">
-    <link rel="stylesheet" href="styles/main-large.css">
+    <link rel="stylesheet" href="../styles/main-small.css">
+    <link rel="stylesheet" href="../styles/main-large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Londrina+Sketch&family=Montserrat:ital@0;1&display=swap"
         rel="stylesheet">
+    <script src="../scripts/app.js" defer></script>
 </head>
 
 <body>
     <header>
-        <span id="logo"></span>
-        <h1>Denistry On The Go</h1>
+        <img src="../images/logo.svg" alt="logo" class="logo" loading="lazy">
+        <a href="../index.html"><h1>Denistry OTG</h1></a>
+        <span id="hamburger"></span>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="nav-footer/study-plan.html">Study plan</a></li>
-                <li><a href="further-study.html">Further study</a></li>
-                <li><a href="nav-footer/contact.html">Contact us</a></li>
+            <ul class="nav-items">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../nav-footer/study-plan.html">Study plan</a></li>
+                <li><a href="../nav-footer/resources-further-study.html">Further study</a></li>
+                <li><a href="../nav-footer/contact.html">Contact us</a></li>
             </ul>
         </nav>
     </header>
@@ -33,45 +35,73 @@
         <h2 class="page-title"></h2>
         <div id="banner">
             <!-- use dynamic js to generate welcome message based on local storage number of visits -->
-            <p class="exam-countdown"></p>
+            <p class="welcome-message"></p>
+            <form action="username" method="get" class="name-form">
+                <p id="form-instr">All fields required</p>
+
+                <label>What is your name? <input type="text" id="username" name="username" required autocomplete="additional-name"></label>
+
+                <label>When is your exam? <input type="date" name="install-date" id="exam-date" required></label>
+                <input id="submit" type="submit" value="Submit Username">
+            </form>
         </div>
         <div id="content-box">
-            <section class="content"></section>
-            <section class="content"></section>
-            <section class="content"></section>
-            <section class="content"></section>
-            <section class="content"></section>
-            <section class="content"></section>
-            <section class="content"></section>
-            <section class="content"></section>
-            <section class="content"></section>
-            <section class="content"></section>
-        </div>
-        <div id="faq">
-            <ul>
-                <li>faq 1</li>
-                <li>faq 2</li>
-                <li>faq 3</li>
-                <li>faq 4</li>
-                <li>faq 5</li>
-            </ul>
-        </div>
-        <div id="sidebar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="specialties/perio.html">Periodontics</a></li>
-                <li><a href="specialties/preventive.html">Preventive Dentistry</a></li>
-                <li><a href="specialties/restorative.html">Restorative Dentistry</a></li>
-                <li><a href="specialties/omfs.html">Oral and Maxillofacial Surgery</a></li>
-                <li><a href="specialties/om-op.html">Oral Medicine/Oral Pathology</a></li>
-                <li><a href="specialties/oral-biology.html">Oral Biology</a>Oral Biology</li>
-                <li><a href="nav-footer/resources-further-study.html">Further Study</a></li>
-            </ul>
+            <article class="must">
+                <h3>What is the difference between natal and neonatal teeth?</h3>
+                <p>
+                Natal teeth are present at birth, whereas neonatal teeth emerge through the gingiva during the first month of life.
+                </p>
+            </article>
+
+            <article class="nice">
+                <h3>How common are natal teeth?</h3>
+                <p>
+                There is a large range in the reported prevalence of natal teeth. One study used two methods of determining prevalence: method 1 prevalence was 1 in 3667 births and method 2 prevalence was 1 in 716 births. In previous studies, the prevalence ranged from 1 in 1000 to 30,000 births
+                </p>
+            </article>
+
+            <article class="must">
+                <h3>Summarize the characteristics of natal teeth.</h3>
+                <p>
+                    <ul>
+                        <li>95% are the actual primary teeth; 5% are supernumerary teeth.</li>
+                        <li>All natal teeth observed in one study were mandibular central incisors.</li>
+                        <li> family history of natal teeth has been established in previous studies; the incidence of a positive family history ranges from 8% to 46%.</li>
+                        <li>When natal teeth erupt, the enamel is at the normal histologic age for the child. Because the teeth erupt prematurely, the enamel matrix is not fully calcified and wears off quickly. Once the gingival covering is lost, the enamel cannot continue to mature.</li>
+                    </ul>
+                </p>
+            </article>
+
+            <article class="must">
+                <h3>How are natal teeth managed?</h3>
+                <p>
+                In general, natal teeth are left alone unless they cause difficulty for the infant or mother. Clinical complications include ulceration of the tongue, lingual frenum, or mother’s nipple during breast-feeding. Because natal teeth are usually mobile, some people worry about aspiration. Although no cases of aspiration have been reported, it is generally recommended that highly mobile natal teeth be extracted. On non-mobile natal teeth, treatment may also include grinding to smooth the incisal edge. In three reports, a breast-feeding splint was fabricated. In one study, half of the natal teeth were removed or lost before 4 months of age.
+                If the teeth survive past 4 months of age, the prognosis for continued survival is good; most natal teeth, however, are not aesthetically pleasing because of enamel dysplasia.
+                </p>
+            </article>
+
+            <article class="nice">
+                <h3>Are any syndromes associated with natal teeth?</h3>
+                <p>
+                Three syndromes have been associated with natal teeth:
+                <ol>
+                    <li>Chondroectodermal dysplasia, or Ellis-van Creveld syndrome</li>
+                    <li>Oculomandibulodyscephaly with hypotrichosis, or Hallermann-Streiff syndrome</li>
+                    <li>Pachyonychia congenita, or Jadassohn-Lewandowski syndrome.</li>
+                </ol>
+                </p>
+            </article>
         </div>
     </main>
     <footer>
         <p>
-            <a href="#">References</a>
+            &copy;<span id="currentYear"></span>
+            <span>Godwin Bassey</span>
+            <span>Calabar, Nigeria</span>
+        </p>
+        <p id="lastModified"></p>
+        <p>
+            <a href="../nav-footer/resources-further-study.html"><span>References</span></a>
         </p>
     </footer>
 </body>
